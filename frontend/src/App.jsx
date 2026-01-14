@@ -17,7 +17,8 @@ function App() {
     const fetchGames = async () => {
       try {
         const query = debouncedSearch ? `?search=${encodeURIComponent(debouncedSearch)}` : '';
-        const res = await fetch(`http://localhost:3000/list${query}`);
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+        const res = await fetch(`${apiUrl}/list${query}`);
         const data = await res.json();
         setGames(data);
       } catch (error) {

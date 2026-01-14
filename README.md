@@ -17,6 +17,12 @@ A modern, responsive web application for searching games, featuring a premium de
    npm start
    ```
 
+3. (Optional) Configuration:
+   Create a `.env` file in the `frontend` directory to override the backend URL:
+   ```env
+   VITE_API_URL=https://your-backend-url.com
+   ```
+
 3. Open your browser to the URL shown in the terminal (usually `http://localhost:5173`).
 
 ## Backend API

@@ -1,3 +1,6 @@
 node_modules/ 
 .env 
 games.db 
+node_modules/ 
+.env 
+games.db 
