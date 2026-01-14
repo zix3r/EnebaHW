@@ -48,5 +48,5 @@ The backend runs on `http://localhost:3000`.
 This project is self-contained. The `npm start` command runs both the React frontend (Vite) and the Node.js/Express backend locally for evaluation.
 
 ### My Deployment
-**Frontend: ** https://eneba-hw.vercel.app
-**Backend: ** https://enebahw.onrender.com
+**Frontend:** https://eneba-hw.vercel.app
+**Backend:** https://enebahw.onrender.com
