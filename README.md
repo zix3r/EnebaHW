@@ -1,6 +1,6 @@
 # Game Search Web App
 
-A modern, responsive web application for searching games, featuring a premium design inspired by Eneba.
+A web application used to search for games.
 
 ## Prerequisites
 - Node.js (v14 or higher)
@@ -36,13 +36,17 @@ The backend runs on `http://localhost:3000`.
 1. Push this repository to GitHub.
 2. Connect your repository to Vercel or Netlify.
 3. Set the build command to `npm run build` (in `frontend` folder) and publish directory to `dist`.
-4. *Important*: You will need to update the `fetch` URL in `App.jsx` to point to your deployed backend URL instead of `localhost:3000`.
+4. *Important*: Create an environment variable VITE_API_URL with the value being the url to the backend.
 
 ### Backend (Render / Railway / Glitch)
 1. Push the `backend` folder or the whole repo to GitHub.
 2. Deploy to Render.com (Web Service) or Railway.app.
    - **Render**: Connect repo, set root directory to `backend`, Build Command: `npm install`, Start Command: `node index.js`.
-3. Note: The SQLite database files are ephemeral on most free tiers (will reset on redeploy/spin-down). For persistence, use a managed database (PostgreSQL/MySQL) or a volume (if supported). For this assignment, the seed script ensures data is always present on start.
+3. Note: The SQLite database files are ephemeral on most free tiers (will reset on redeploy/spin-down). For persistence, use a managed database (PostgreSQL/MySQL) or a volume (if supported).
 
 ### Solution for Assignment
 This project is self-contained. The `npm start` command runs both the React frontend (Vite) and the Node.js/Express backend locally for evaluation.
+
+### My Deployment
+**Frontend: ** https://eneba-hw.vercel.app
+**Backend: ** https://enebahw.onrender.com
